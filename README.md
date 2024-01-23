@@ -99,7 +99,7 @@ npm install
 #### Update a Note
 
 ```http
-  PUT /notes/:id
+  PUT /notes/updateNote/:id
 ```
 
 | Parameter | Type     | Description                       |
@@ -123,7 +123,7 @@ npm install
 #### Delete a Note
 
 ```http
-  DELETE /notes/:id
+  DELETE /notes/deleteNote/:id
 ```
 
 | Parameter | Type     | Description                       |
