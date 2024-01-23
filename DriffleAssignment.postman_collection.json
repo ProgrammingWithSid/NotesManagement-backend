@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "15d7b350-c8aa-4064-ba06-427e697ee744",
+		"name": "DriffleAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27382289"
+	},
+	"item": [
+		{
+			"name": "userRegister",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\":\"Satender\",\r\n    \"last_name\":\"Kumar\",\r\n    \"email\":\"satender@gmail.com\",\r\n    \"password\":\"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/user/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userLogin",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getAllNotes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/notes/getAllNotes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"getAllNotes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Third Note\",\r\n    \"description\":\"This is description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/notes/createNote",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"createNote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateNote",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Update\",\r\n    \"description\":\"Third note has changed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/notes/updateNote/65afa02a19c010d8db1698bd",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"updateNote",
+						"65afa02a19c010d8db1698bd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteNote",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/notes/deleteNote/65aecd4de7afd108e01827a0",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"deleteNote",
+						"65aecd4de7afd108e01827a0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "toggleRead",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/notes/toggleNote/65aed7da5b807f14a97f7658",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"notes",
+						"toggleNote",
+						"65aed7da5b807f14a97f7658"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
